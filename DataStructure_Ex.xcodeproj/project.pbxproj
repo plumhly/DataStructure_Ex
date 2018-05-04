@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		388B05942091CB42005A43C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 388B05932091CB42005A43C7 /* main.m */; };
+		389F6F5E209C5238006B5443 /* ListStructure.c in Sources */ = {isa = PBXBuildFile; fileRef = 389F6F5D209C5238006B5443 /* ListStructure.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		388B05902091CB42005A43C7 /* DataStructure_Ex */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure_Ex; sourceTree = BUILT_PRODUCTS_DIR; };
 		388B05932091CB42005A43C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		389F6F5C209C5238006B5443 /* ListStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListStructure.h; sourceTree = "<group>"; };
+		389F6F5D209C5238006B5443 /* ListStructure.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ListStructure.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,19 @@
 		388B05922091CB42005A43C7 /* DataStructure_Ex */ = {
 			isa = PBXGroup;
 			children = (
+				389F6F5B209C5206006B5443 /* 链表 */,
 				388B05932091CB42005A43C7 /* main.m */,
 			);
 			path = DataStructure_Ex;
+			sourceTree = "<group>";
+		};
+		389F6F5B209C5206006B5443 /* 链表 */ = {
+			isa = PBXGroup;
+			children = (
+				389F6F5C209C5238006B5443 /* ListStructure.h */,
+				389F6F5D209C5238006B5443 /* ListStructure.c */,
+			);
+			path = "链表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				388B05942091CB42005A43C7 /* main.m in Sources */,
+				389F6F5E209C5238006B5443 /* ListStructure.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
