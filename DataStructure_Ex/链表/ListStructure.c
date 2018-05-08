@@ -51,7 +51,7 @@ Position findPrevious(ElementType x, List l) {
 void insert(ElementType x, List l, Position p) {
     Position temp = malloc(sizeof(struct Node));
     if (temp == NULL) {
-        FatalError("out of space");
+        printf("out of space");
     }
     temp->next = p->next;
     temp->element = x;
