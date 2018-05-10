@@ -146,6 +146,42 @@ long int powCustom(long int x, int n) {
 //思考把6行替换成 return powCustom(x, n / 2) * powCustom(x, n / 2);
 // 这样时间 T(n) = T(n) + 2T(n) + 4T(n) + ......
 
+#pragma mark - 基数排序
+#define BASE 10
+#define MAX 20
+
+void radix(int *p, int length) {
+    int max = 0;
+    
+    for (int i = 0; i < length; i++) {
+        if (p[i] > max) {
+            max = p[i];
+        }
+    }
+    
+    int exp = 1;
+    int b[MAX] = {0};
+    while ((max / exp) > 0) {
+        int backet[BASE] = {0};
+        for (int i = 0; i < length; i++) {
+            backet[(p[i] / exp) % BASE]++;
+        }
+        
+        for (int i = 1; i < BASE; i++) {
+            backet[i] += backet[i - 1];
+        }
+        
+        for (int i = length - 1; i >= 0; i--) {
+            b[--backet[(p[i] / exp) % BASE]] = p[i];
+        }
+        
+        for (int i = 0; i < length; i++) {
+            p[i] = b[i];
+        }
+        exp *= BASE;
+    }
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
@@ -172,6 +208,9 @@ int main(int argc, const char * argv[]) {
         }
          NSLog(@"gcd2: %f", CFAbsoluteTimeGetCurrent() - time);
         
+//-----------------------------基数排序--------------------------------------
+        int p[4] = {244, 4, 134, 24};
+        radix(p, 4);
         NSLog(@"");
         
     }
