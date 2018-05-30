@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		383F8AB420A05170000AFB87 /* ListForPoly.c in Sources */ = {isa = PBXBuildFile; fileRef = 383F8AB320A05170000AFB87 /* ListForPoly.c */; };
+		386432AA20BE9D5500236BB9 /* Graphic.c in Sources */ = {isa = PBXBuildFile; fileRef = 386432A920BE9D5500236BB9 /* Graphic.c */; };
 		388B05942091CB42005A43C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 388B05932091CB42005A43C7 /* main.m */; };
 		389F6F5E209C5238006B5443 /* ListStructure.c in Sources */ = {isa = PBXBuildFile; fileRef = 389F6F5D209C5238006B5443 /* ListStructure.c */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		383F8AB220A05170000AFB87 /* ListForPoly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListForPoly.h; sourceTree = "<group>"; };
 		383F8AB320A05170000AFB87 /* ListForPoly.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ListForPoly.c; sourceTree = "<group>"; };
+		386432A820BE9D5500236BB9 /* Graphic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graphic.h; sourceTree = "<group>"; };
+		386432A920BE9D5500236BB9 /* Graphic.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Graphic.c; sourceTree = "<group>"; };
 		388B05902091CB42005A43C7 /* DataStructure_Ex */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure_Ex; sourceTree = BUILT_PRODUCTS_DIR; };
 		388B05932091CB42005A43C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		389F6F5C209C5238006B5443 /* ListStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListStructure.h; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 				389F6F5D209C5238006B5443 /* ListStructure.c */,
 				383F8AB220A05170000AFB87 /* ListForPoly.h */,
 				383F8AB320A05170000AFB87 /* ListForPoly.c */,
+				386432A820BE9D5500236BB9 /* Graphic.h */,
+				386432A920BE9D5500236BB9 /* Graphic.c */,
 			);
 			path = "链表";
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				386432AA20BE9D5500236BB9 /* Graphic.c in Sources */,
 				383F8AB420A05170000AFB87 /* ListForPoly.c in Sources */,
 				388B05942091CB42005A43C7 /* main.m in Sources */,
 				389F6F5E209C5238006B5443 /* ListStructure.c in Sources */,
